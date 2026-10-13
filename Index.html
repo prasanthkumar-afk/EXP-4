@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic JavaScript</title>
+</head>
+
+<body>
+
+<h2>JavaScript Basic Program</h2>
+
+<button onclick="calculate()">Click Me</button>
+
+<p id="result"></p>
+
+<script>
+
+function calculate() {
+
+    // Variables
+    let a = 10;
+    let b = 20;
+
+    // Arithmetic operation
+    let sum = a + b;
+
+    // Condition
+    if (sum >= 30) {
+        console.log("Sum is 30 or greater");
+    } else {
+        console.log("Sum is less than 30");
+    }
+
+    // Display result
+    document.getElementById("result").innerHTML =
+        "A = " + a + "<br>" +
+        "B = " + b + "<br>" +
+        "Sum = " + sum;
+}
+
+</script>
+
+</body>
+</html>
